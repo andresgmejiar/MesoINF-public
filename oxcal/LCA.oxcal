@@ -1,0 +1,966 @@
+ Plot()
+ {
+  Sequence("Mogote")
+  {
+   Sigma_Boundary();
+   Combine("MGE Hearth")
+   {
+    R_Date("Gx-12885", 3400, 90);
+    R_Date("B-30985", 3410, 60);
+    R_Date("B-30986", 3470, 50);
+   };
+   Sigma_Boundary();
+  };
+  P_Sequence("Lago Cote",1,2,U(-2,2))
+  {
+   Boundary();
+   R_Date("B-130736",3630,70)
+   {
+    z=356;
+   };
+   Date("AR-8 Tephra")
+   {
+    z=304.5;
+   };
+   R_Date("B-134419",2730,50)
+   {
+    z=294;
+   };
+   Date("AR-9 Tephra")
+   {
+    z=291.5;
+   };
+   R_Date("B-134418", 2510, 50)
+   {
+    z=288;
+   };
+   R_Date("B-136023",2240,40)
+   {
+    z=193.5;
+   };
+   Date("=AR-14 Tephra")
+   {
+    z=187.5;
+   };
+   R_Date("B-137968",1490,50)
+   {
+    z=148.5;
+   };
+   Boundary();
+  };
+  Sequence("Quebrada Guillermina")
+  {
+   Boundary("=AR-8 Tephra");
+   Combine("QGR Embedded Plants")
+   {
+    R_Date("Borgia-4", 2895, 145);
+    R_Date("Borgia-5", 2650, 115)
+    {
+     Outlier();
+    };
+    R_Date("Alvarado-1", 3320, 250);
+   };
+   Boundary("=AR-9 Tephra");
+  };
+  Sequence("La Espina")
+  {
+   R_Date("Melson-1", 3675, 50);
+   Combine("LES Embedded Plants")
+   {
+    R_Date("Borgia-1", 3500, 50);
+    R_Date("Borgia-2", 3510, 120);
+    R_Date("Borgia-3", 3460, 70);
+   };
+   Boundary("=AR-8 Tephra");
+  };
+  Sequence("Sangregado Dam")
+  {
+   Boundary("=AR-8 Tephra");
+   Phase("SGD Paleosol immediately below tephra")
+   {
+    R_Date("ICE-1", 4030, 150)
+    {
+     Outlier();
+    };
+    R_Date("Borgia-6", 3025, 150);
+   };
+   Boundary("=AR-9 Tephra");
+  };
+  Sequence("La Chiripa")
+  {
+   Boundary("=AR-8 Tephra");
+   R_Date("UCIAMS-229025", 3305, 15);
+   Phase("LCH Hearths")
+   {
+    R_Date("B-447098", 3310, 30);
+    R_Date("UCIAMS-229021", 3265, 15);
+   };
+   Phase("LCH UN-60")
+   {
+    R_Date("UCIAMS-229020", 3190, 15);
+    R_Date("UCIAMS-261637",3220,15);
+    R_Date("UCIAMS-261639",3145,15);
+    R_Date("UCIAMS-261633",1960,5)
+    {
+     Outlier();
+    };
+   };
+   Phase("LCH UN-61 Intrusions")
+   {
+    Combine("LCH Feature 2")
+    {
+     R_Date("UCIAMS-229022", 3015, 15);
+     R_Date("UCIAMS-229024", 2995, 15);
+     R_Date("UCIAMS-229023", 2990, 15);
+    };
+    Combine("LCH Post Hole 17")
+    {
+     R_Date("UCIAMS-261635",3020,20);
+     R_Date("UCIAMS-261636",2995,20);
+    };
+    R_Date("UCIAMS-261634",2965,25);
+    R_Date("UCIAMS-261638",3070,20);
+   };
+   Boundary("=AR-9 Tephra",);
+   R_Date("UCIAMS-261632",2185,20);
+   Boundary("AR-14 Tephra");
+   Phase("LCH UN-54")
+   {
+    R_Date("B-447099", 2180, 30);
+    R_Date("UCIAMS-261631",2230,15);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Tronadora Vieja")
+  {
+   Sigma_Boundary();
+   Phase("TVJ Below Aguacate")
+   {
+    Combine("TVJ Fortuna Hearth")
+    {
+     R_Date("TX-5275", 4600, 70)
+     {
+      Outlier();
+     };
+     R_Date("TX-5274", 4210, 70)
+     {
+      Outlier();
+     };
+     R_Date("SI-?", 3675, 100);
+    };
+    R_Date("TX-5278", 4580, 80);
+    R_Date("TX-5276", 4450, 70);
+    Date("=Costa Rican Initial Ceramic");
+   };
+   Phase("TVJ Aguacate Surface")
+   {
+    R_Date("TX-5277", 3730, 100);
+    R_Date("TX-5279", 3480, 320);
+   };
+   Boundary("=AR-8 Tephra",);
+   Boundary("=AR-9 Tephra");
+   Boundary("=AR-14 Tephra");
+   Phase("TVJ Arenal Features")
+   {
+    R_Date("TX-5280", 2470, 560);
+    R_Date("TX-5081", 2030, 300);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("La Montaña")
+  {
+   Sigma_Boundary();
+   R_Date("UCLA-2113A", 3465, 160);
+   Phase("LMÑ From Flood")
+   {
+    R_Date("UCLA-2113B", 2275, 160);
+    R_Date("UCLA-2113M", 2230, 60);
+    R_Date("UCLA-2113N", 2550, 60);
+    R_Date("UCLA-2113D", 2500, 60);
+   };
+   Boundary("LMÑ Flood");
+  };
+  Sequence("La Cascada")
+  {
+   Sigma_Boundary();
+   Phase("LCC Nivel 4")
+   {
+    R_Date("B-361129", 2478, 29);
+    R_Date("B-361128", 2303, 29);
+   };
+   R_Date("B-361127", 2293, 29);
+   Sigma_Boundary();
+  };
+  Sequence("La Quebrada")
+  {
+   Sigma_Boundary();
+   Phase("LQB Level 5")
+   {
+    R_Date("B-361133", 2614, 29);
+    R_Date("B-361136", 2478, 29);
+    R_Date("B-361135", 2400, 29);
+   };
+   R_Date("B-361134", 2390, 29);
+   Sigma_Boundary();
+  };
+  Sequence("Jabillo")
+  {
+   Sigma_Boundary();
+   R_Date("B-325234", 2930, 30);
+   Boundary("Upper/Lower Interface");
+   Phase("JBJ Upper Strata")
+   {
+    R_Date("B-325232", 2510, 30);
+    R_Date("B-325235", 2380, 30);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Los Higuerones")
+  {
+   Sigma_Boundary();
+   Phase("LHG Occupation")
+   {
+    R_Date("B-196735", 2610, 60);
+    R_Date("A-13648", 2525, 50);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Sibon")
+  {
+   Sigma_Boundary();
+   Phase("SIB Occupation")
+   {
+    Sequence("SIB Pit 109")
+    {
+     R_Date("B-325229", 2510, 30);
+     R_Date("B-325230", 2420, 30);
+    };
+    R_Date("B-325228", 2380, 30);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Kaulklo")
+  {
+   Sigma_Boundary();
+   Phase("KKL Occupation")
+   {
+    R_Date("B-319139", 2500, 30);
+    R_Date("B-319138", 2440, 30);
+    R_Date("B-319140", 2410, 30);
+    R_Date("B-319141", 2400, 30);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Sitio Black Creek")
+  {
+   Sigma_Boundary();
+   R_Date("B-143063", 2580, 40)
+   {
+    Outlier();
+   };
+   R_Date("B-143065", 3440, 40);
+   R_Date("B-144240", 2820, 60);
+   Boundary("Estrato II/III");
+   Phase("Rasgo 2")
+   {
+    R_Date("B-143064", 2460, 40);
+    R_Date("B-144239", 2930, 80);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Casita de Piedra")
+  {
+   Sigma_Boundary();
+   R_Date("I-6278", 6560, 120);
+   Phase("CPD Level E")
+   {
+    R_Date("I-5765", 5795, 105);
+    R_Date("I-5764", 5680, 105);
+   };
+   Boundary("Fine/Rocky Silt Interface");
+   R_Date("SI-1845", 4085, 75);
+   R_Date("I-5614", 4075, 105);
+   R_Date("SI-1844", 2890, 70);
+   Sigma_Boundary();
+  };
+  Sequence("Trapiche")
+  {
+   Sigma_Boundary();
+   Phase("TRP Level E")
+   {
+    R_Date("I-5613", 5850, 110);
+    R_Date("SI-1848", 4685, 85);
+   };
+   R_Date("SI-1847", 3870, 75)
+   {
+    Outlier();
+   };
+   Boundary("=Fine/Rocky Silt Interface");
+   R_Date("SI-1846", 2890, 70);
+   Sigma_Boundary();
+  };
+  Sequence("Hornito")
+  {
+   Sigma_Boundary();
+   Phase("HRT Occupation")
+   {
+    R_Date("I-12019", 5880, 260);
+    R_Date("I-12017", 6180, 180);
+    R_Date("I-12018", 6270, 270);
+   };
+   Sigma_Boundary();
+  };
+  Curve("intcal", "intcal20.14c");
+  Sequence("Monagrillo Site")
+  {
+   Sigma_Boundary();
+   Phase("MGR")
+   {
+    Sequence("MGR Block 1E")
+    {
+     R_Date("I-9384", 3325, 85);
+     R_Date("SI-2844", 4135, 80)
+     {
+      Outlier();
+     };
+     R_Date("SI-2843", 3245, 100);
+     R_Date("SI-2842", 4405, 75)
+     {
+      Outlier();
+     };
+    };
+    Sequence("MGR Block 2E")
+    {
+     Curve("marine20", "marine20.14c");
+     Delta_R("LocalMarine", -120, 25);
+     R_Date("TEM-208", 4350, 165)
+     {
+      Outlier();
+     };
+     Curve("=intcal", );
+     R_Date("SI-2841", 5385, 95);
+     R_Date("TEM-109", 5495, 100);
+     R_Date("SI-2840", 3615, 80);
+     R_Date("SI-2839", 3485, 100);
+     R_Date("SI-2838", 3385, 75);
+    };
+    R_Date("Y-585", 4090, 70);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Cueva de los Ladrones")
+  {
+   Sigma_Boundary();
+   Phase("CLD")
+   {
+    Sequence("CLD Area A")
+    {
+     R_Date("TEM-123", 6860, 110);
+     Combine("CLD Monagrillo Midden")
+     {
+      R_Date("TEM-124", 4520, 100);
+      Curve("=LocalMarine");
+      R_Date("TEM-119", 4800, 100);
+      Curve("=intcal");
+     };
+     Curve("=LocalMarine");
+     R_Date("TEM-121", 3860, 90);
+     R_Date("TEM-120", 3770, 80);
+    };
+    Curve("=LocalMarine");
+    R_Date("TEM-129", 4800, 100);
+    Curve("=intcal");
+    R_Date("TEM-122", 3880, 80);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Aguadulce")
+  {
+   Sigma_Boundary();
+   Phase("AGD")
+   {
+    Sequence("AGD Block 3")
+    {
+     Curve("=intcal");
+     R_Date("TEM-110", 3540, 115)
+     {
+      Outlier();
+     };
+     Curve("=LocalMarine");
+     Phase("AGD Block 3 Layer C4")
+     {
+      R_Date("TEM-131", 6180, 120);
+      R_Date("TEM-130", 4210, 90);
+     };
+     Phase("AGD Block 3 Layer C3")
+     {
+      R_Date("TEM-127", 2790, 110);
+      R_Date("TEM-128", 3700, 100);
+     };
+     R_Date("TEM-126", 2960, 80);
+     R_Date("TEM-125", 2540, 70);
+     R_Date("TEM-107", 2570, 70);
+    };
+    Phase("AGD Zone D")
+    {
+     R_Date("NZA-9624", 7061, 81);
+     R_Date("NZA-9625", 8423, 79);
+     R_Date("UCR-3462", 5560, 80);
+    };
+    Phase("AGD Zone C")
+    {
+     Curve("=intcal");
+     R_Date("NZA-10929", 6207, 60);
+     R_Date("UCR-3417", 6910, 60);
+     Curve("=LocalMarine");
+     R_Date("TEM-106", 5840, 95);
+     R_Date("TEM-108", 3660, 95);
+     Date("=TEM-110");
+     Date("=TEM-131");
+     Date("=TEM-130");
+     Date("=TEM-127");
+     Date("=TEM-128");
+    };
+    Phase("AGD Zone B")
+    {
+     Curve("=intcal");
+     R_Date("UCR-3418", 4250, 60);
+     Date("=TEM-126");
+     Date("=TEM-125");
+     Date("=TEM-107");
+    };
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Cerro Mangote")
+  {
+   Sigma_Boundary();
+   Phase("CMG")
+   {
+    Phase("CMG 180-90cm")
+    {
+     Curve("=intcal");
+     R_Date("B-1218", 3555, 100);
+     Curve("=LocalMarine");
+     R_Date("TEM-206", 6710, 170);
+     R_Date("TEM-207", 5055, 150);
+     Combine("CMG Same Shell")
+     {
+      R_Date("TEM-174", 5990, 180)
+      {
+       Outlier();
+      };
+      R_Date("TEM-175", 5140, 120);
+     };
+    };
+    Sequence("CMG Red Clay")
+    {
+     Curve("=intcal");
+     R_Date("B-1219", 6670, 215);
+     Curve("=LocalMarine");
+     R_Date("TEM-176", 5440, 130);
+    };
+    Curve("=intcal");
+    R_Date("Y-458D", 6810, 110);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Cueva de los Vampiros")
+  {
+   Sigma_Boundary();
+   R_Date("B-5101", 8560, 160);
+   Phase("CVP Occupation")
+   {
+    Curve("=intcal");
+    R_Date("B-5870", 3800, 120);
+    R_Date("SI-5687", 3100, 60);
+    R_Date("SI-5688", 1875, 45);
+    Curve("=LocalMarine");
+    R_Date("B-27592", 2540, 90);
+    R_Date("B-27591", 2840, 70);
+    R_Date("SI-6264", 2450, 50);
+   };
+   Boundary();
+  };
+  Sequence("Zapotal")
+  {
+   Sigma_Boundary();
+   Phase("ZPT Occupation")
+   {
+    Curve("=LocalMarine");
+    R_Date("B-9574", 3500, 80);
+    R_Date("B-20850", 3520, 80);
+    R_Date("B-21388", 3610, 70);
+    R_Date("B-20849", 3850, 70);
+    R_Date("B-21389", 4100, 100);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Carabali")
+  {
+   Sigma_Boundary();
+   Curve("=intcal");
+   R_Date("B-9575", 8040, 390);
+   R_Date("B-19101", 2920, 180);
+   Sigma_Boundary();
+  };
+  Sequence("La Mula-Sarigua")
+  {
+   Sigma_Boundary();
+   Phase("LMS Occupation")
+   {
+    Curve("=LocalMarine");
+    R_Date("B-21898", 2640, 60);
+    R_Date("B-12931", 2340, 70);
+    R_Date("B-12729", 2270, 90);
+    R_Date("B-12728", 2220, 70);
+    R_Date("B-18863", 2190, 90);
+   };
+   Sigma_Boundary();
+  };
+  Sequence("Corona")
+  {
+   Sigma_Boundary();
+   Phase("CRA")
+   {
+    Curve("=intcal");
+    R_Date("B-19411", 7440, 280);
+    Curve("=LocalMarine");
+    R_Date("B-27529", 5980, 100);
+    Curve("=intcal");
+   };
+   Sigma_Boundary();
+  };
+  Sequence()
+  {
+   Boundary("Start Fortuna")
+   {
+    Transition("Fortuna Trans");
+    Start("Fortuna Appears");
+    End("Open Fortuna");
+   };
+   Phase("Fortuna")
+   {
+    R_Date("TX-5286", 4890, 100);
+    Date("=TX-5277");
+    Date("=SI-?");
+    Date("="MGE Hearth"");
+   };
+   Boundary("End Fortuna")
+   {
+    Transition("Fortuna Fade");
+    Start("Close Fortuna");
+    End("Fortuna Disappears");
+   };
+   Boundary("=AR-9 Tephra");
+  };
+  Sequence()
+  {
+   Date("=LCA Ceramic Appears");
+   Boundary("Start Tronadora")
+   {
+    Transition("Tronadora Trans");
+    Start("Tronadora Appears");
+    End("Open Tronadora");
+   };
+   Phase("Early Tronadora")
+   {
+    Date("=TX-5276");
+    Date("=TX-5278");
+    Date("=TX-5277");
+    Date("=TX-5279");
+   };
+   Boundary("=AR-8 Tephra");
+   Phase("Late Tronadora")
+   {
+    Date("=B-47098");
+    Date("=UCIAMS-229025");
+    Date("=UCIAMS-229021");
+    Date("=UCIAMS-229020");
+    Date("=UCIAMS-229022");
+    Date("=UCIAMS-229023");
+    Date("=UCIAMS-229024");
+   };
+   Boundary("End Tronadora")
+   {
+    Transition("Tronadora Fade");
+    Start("Close Tronadora");
+    End("Tronadora Disappears");
+   };
+   Boundary("=AR-14 Tephra");
+  };
+  Sequence()
+  {
+   Date("=LCA Ceramic Appears");
+   Boundary("Start Montaña")
+   {
+    Transition("Montaña Trans");
+    Start("Montaña Appears");
+    End("Open Montaña");
+   };
+   Phase("Early La Montaña")
+   {
+    Date("=UCLA-2113A");
+    Date("=B-325234");
+   };
+   Boundary("Early/Late La Montaña");
+   Phase("Late La Montaña")
+   {
+    Date("=UCLA-2113B");
+    Date("=UCLA-2113D");
+    Date("=UCLA-2113M");
+    Date("=UCLA-2113N");
+    Date("=B-361129");
+    Date("=B-361128");
+    Date("=B-361127");
+    Date("=B-361133");
+    Date("=B-361136");
+    Date("=B-361135");
+    Date("=B-361134");
+    Date("=B-325232");
+    Date("=B-325235");
+    Date("=B-196735");
+    Date("=A-13648");
+    Date("=B-325228");
+    Date("=B-325229");
+    Date("=B-325230");
+    R_Date("B-431568", 2480, 30);
+    R_Date("B-431570", 2460, 30);
+    R_Date("UCLA-2167F", 2910, 100);
+    Date("=B-319139");
+    Date("=B-319138");
+    Date("=B-319140");
+    Date("=B-319141");
+   };
+   Boundary("End Montaña")
+   {
+    Transition("Montaña Fade");
+    Start("Close Montaña");
+    End("Montaña Disappears");
+   };
+  };
+  Sequence()
+  {
+   Boundary("Start Talamanca")
+   {
+    Transition("Talamanca Trans");
+    Start("Talamanca Appears");
+    End("Open Talamanca");
+   };
+   Phase("Talamanca")
+   {
+    Date("=I-5764");
+    Date("=I-5765");
+    Date("=I-6278");
+    Date("=SI-1847");
+    Date("=SI-1848");
+    Date("=I-5613");
+    Date("=I-12019");
+    Date("=I-12017");
+    Date("=I-12018");
+   };
+   Boundary("End Talamanca")
+   {
+    Transition("Talamanca Fade");
+    Start("Close Talamanca");
+    End("Talamanca Disappears");
+   };
+  };
+  Sequence()
+  {
+   Boundary("Start Boquete")
+   {
+    Transition("Boquete Trans");
+    Start("Boquete Appears");
+    End("Open Boquete");
+   };
+   Phase("Boquete")
+   {
+    Date("=I-5614");
+    Date("=SI-1844");
+    Date("=SI-1845");
+    Date("=SI-1846");
+   };
+   Boundary("End Boquete")
+   {
+    Transition("Boquete Fade");
+    Start("Close Boquete");
+    End("Boquete Disappears");
+   };
+  };
+  Sequence()
+  {
+   Date("=LCA Ceramic Appears");
+   Boundary("Start Black Creek")
+   {
+    Transition("Black Creek Trans");
+    Start("Black Creek Appears");
+    End("Open Black Creek");
+   };
+   Phase("Black Creek")
+   {
+    R_Date("I-5871", 2685, 110);
+    Date("=B-143064");
+    Date("=B-143065");
+    Date("=B-143063");
+    Date("=B-144240");
+    Date("=B-144239");
+   };
+   Boundary("End Black Creek")
+   {
+    Transition("Black Creek Fade");
+    Start("Close Black Creek");
+    End("Black Creek Disappears");
+   };
+  };
+  Sequence()
+  {
+   Boundary("Start Preceramic B")
+   {
+    Transition("Preceramic B Trans");
+    Start("Preceramic B Appears");
+    End("Open Preceramic B");
+   };
+   Phase("Preceramic B")
+   {
+    Date("=TEM-127");
+    Date("=TEM-110");
+    Date("=B-1218");
+    Date("=TEM-108");
+    Date("=TEM-128");
+    Date("=TEM-130");
+    Date("=TEM-207");
+    Date("=TEM-175");
+    Date("=TEM-176");
+    Date("=UCR-3462");
+    Date("=TEM-106");
+    Date("=B-27529");
+    Date("=TEM-174");
+    Date("=TEM-131");
+    Date("=NZA-10929");
+    Date("=B-1219");
+    Date("=TEM-206");
+    Date("=Y-458D");
+    Date("=TEM-123");
+    Date("=UCR-3417");
+    Date("=NZA-9624");
+    Date("=NZA-9625");
+    Date("=B-5101");
+    Date("=B-9575");
+    Date("=B-19411");
+    Curve("=intcal");
+    R_Date("B-12437", 5630, 180);
+    R_Date("B-9576", 7100, 230);
+    Curve("=LocalMarine");
+    R_Date("SI-6223", 8795, 135);
+   };
+   Boundary("End Preceramic B")
+   {
+    Transition("Preceramic B Fade");
+    Start("Close Preceramic B");
+    End("Preceramic B Disappears");
+   };
+  };
+  Sequence()
+  {
+   Date("=LCA Ceramic Appears");
+   Boundary("Start Monagrillo")
+   {
+    Transition("Monagrillo Trans");
+    Start("Monagrillo Appears");
+    End("Open Monagrillo");
+   };
+   Phase("Monagrillo")
+   {
+    Date("=SI-5688");
+    Date("=SI-6264");
+    Date("=TEM-125");
+    Date("=B-27592");
+    Date("=TEM-107");
+    Date("=B-27591");
+    Date("=B-19101");
+    Date("=TEM-126");
+    Date("=SI-5687");
+    Date("=SI-2843");
+    Date("=I-9384");
+    Date("=SI-2838");
+    Date("=SI-2839");
+    Date("=B-9574");
+    Date("=B-20850");
+    Date("=B-21388");
+    Date("=SI-2840");
+    Date("=TEM-120");
+    Date("=B-5870");
+    Date("=B-20849");
+    Date("=TEM-121");
+    Date("=TEM-122");
+    Date("=Y-585");
+    Date("=B-21389");
+    Date("=SI-2844");
+    Date("=UCR-3418");
+    Date("=TEM-208");
+    Date("=SI-2842");
+    Date("=TEM-124");
+    Date("=TEM-119");
+    Date("=TEM-129");
+    Date("=SI-2841");
+    Date("=TEM-109");
+    Curve("=intcal");
+    R_Date("SI-6237", 2685, 105);
+    R_Date("B-19497", 2855, 95);
+    R_Date("B-19106", 3580, 150);
+    R_Date("SI-6238", 3945, 115);
+    Date("=B-21898",);
+   };
+   Boundary("End Monagrillo")
+   {
+    Transition("Monagrillo Fade");
+    Start("Close Monagrillo");
+    End("Monagrillo Disappears");
+   };
+  };
+  Sequence()
+  {
+   Boundary("Start LCA Ceramic")
+   {
+    Transition("LCA Ceramic Trans");
+    Start("LCA Ceramic Appears");
+    End("Open LCA Ceramic");
+   };
+   Phase("LCA Ceramic")
+   {
+    Date("=SI-5688");
+    Date("=SI-6264");
+    Date("=TEM-125");
+    Date("=B-27592");
+    Date("=TEM-107");
+    Date("=B-27591");
+    Date("=B-19101");
+    Date("=TEM-126");
+    Date("=SI-5687");
+    Date("=SI-2843");
+    Date("=I-9384");
+    Date("=SI-2838");
+    Date("=SI-2839");
+    Date("=B-9574");
+    Date("=B-20850");
+    Date("=B-21388");
+    Date("=SI-2840");
+    Date("=TEM-120");
+    Date("=B-5870");
+    Date("=B-20849");
+    Date("=TEM-121");
+    Date("=TEM-122");
+    Date("=Y-585");
+    Date("=B-21389");
+    Date("=SI-2844");
+    Date("=UCR-3418");
+    Date("=TEM-208");
+    Date("=SI-2842");
+    Date("=TEM-124");
+    Date("=TEM-119");
+    Date("=TEM-129");
+    Date("=SI-2841");
+    Date("=TEM-109");
+    Curve("=intcal");
+    Date("=SI-6237");
+    Date("=B-19497");
+    Date("=B-19106");
+    Date("=SI-6238");
+    Date("=B-21898");
+    Date("=I-5871");
+    Date("=B-143064");
+    Date("=B-143065");
+    Date("=B-143063");
+    Date("=B-144240");
+    Date("=B-144239");
+    Date("=UCLA-2113B");
+    Date("=UCLA-2113D");
+    Date("=UCLA-2113M");
+    Date("=UCLA-2113N");
+    Date("=B-361129");
+    Date("=B-361128");
+    Date("=B-361127");
+    Date("=B-361133");
+    Date("=B-361136");
+    Date("=B-361135");
+    Date("=B-361134");
+    Date("=B-325232");
+    Date("=B-325235");
+    Date("=B-196735");
+    Date("=A-13648");
+    Date("=B-325228");
+    Date("=B-325229");
+    Date("=B-325230");
+    Date("=B-431568");
+    Date("=B-431570");
+    Date("=UCLA-2167F");
+    Date("=B-319139");
+    Date("=B-319138");
+    Date("=B-319140");
+    Date("=B-319141");
+    Date("=UCLA-2113A");
+    Date("=B-325234");
+    Date("=B-47098");
+    Date("=UCIAMS-229025");
+    Date("=UCIAMS-229021");
+    Date("=UCIAMS-229020");
+    Date("=UCIAMS-229022");
+    Date("=UCIAMS-229023");
+    Date("=UCIAMS-229024");
+    Date("=TX-5276");
+    Date("=TX-5278");
+    Date("=TX-5277");
+    Date("=TX-5279");
+   };
+   Boundary("End LCA Ceramic")
+   {
+    Transition("LCA Ceramic Fade");
+    Start("Close LCA Ceramic");
+    End("LCA Ceramic Disappears");
+   };
+  };
+  MCMC_Sample("LCA_MCMC", , 1000000)
+  {
+   Date("=Fortuna Appears");
+   Date("=Tronadora Appears");
+   Date("=Montaña Appears");
+   Date("=Talamanca Appears");
+   Date("=Boquete Appears");
+   Date("=Black Creek Appears");
+   Date("=Preceramic B Appears");
+   Date("=Monagrillo Appears");
+   Date("=Open Fortuna");
+   Date("=Open Tronadora");
+   Date("=Open Montaña");
+   Date("=Open Talamanca");
+   Date("=Open Boquete");
+   Date("=Open Black Creek");
+   Date("=Open Preceramic B");
+   Date("=Open Monagrillo");
+   Date("=Close Fortuna");
+   Date("=Close Tronadora");
+   Date("=Close Montaña");
+   Date("=Close Talamanca");
+   Date("=Close Boquete");
+   Date("=Close Black Creek");
+   Date("=Close Preceramic B");
+   Date("=Close Monagrillo");
+   Date("=Fortuna Disappears");
+   Date("=Tronadora Disappears");
+   Date("=Montaña Disappears");
+   Date("=Talamanca Disappears");
+   Date("=Boquete Disappears");
+   Date("=Black Creek Disappears");
+   Date("=Preceramic B Disappears");
+   Date("=Monagrillo Disappears");
+   Date("=AR-8 Tephra");
+   Date("=AR-9 Tephra");
+   Date("=AR-14 Tephra");
+   Date("=Early/Late La Montaña");
+   Date("=LCA Ceramic Appears");
+   Date("=Open LCA Ceramic");
+   Date("=Close LCA Ceramic");
+   Date("=LCA Ceramic Disappears");
+  };
+ };
